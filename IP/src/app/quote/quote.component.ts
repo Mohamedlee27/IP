@@ -7,7 +7,7 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes=[
-    new Quote('We are all like fireworks: We climb, we shine and always go our separate ways and become further apart','Fear is not evil','To know sorrow is not terrifying. ', new Date)
+    new Quote('Lee','Michael','To know sorrow is not terrifying. ', new Date)
   ]
   add(theQuote) {
     this.quotes.push(theQuote)

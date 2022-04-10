@@ -14,7 +14,7 @@
             <div *ngFor="let quote of quotes let i=index">
                 <app-details [quote]="quote"></app-details>
                 
-        <button class="btn btn-info" (click)="Up(i)">Upvote </button>
+        <button class="btn btn-info" (click)="Up(i)">Upvote</button>
         <button class="btn btn-info" (click)="Down(i)">Downvote </button>
         <button class="btn btn-danger" (click)="Delete(i)">Delete</button>
         </div>
