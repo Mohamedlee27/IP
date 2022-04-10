@@ -6,7 +6,7 @@
                 <a id=""href="">Add Quote</a>
               </div>
               <div *ngFor="let quote of quotes">
-                {{quote.name}}
+                <app-details [quote]="quote"></app-details>
               </div>
     <app-form></app-form>
         </div>
