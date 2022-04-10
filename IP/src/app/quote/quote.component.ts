@@ -7,9 +7,20 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes=[
-    new Quote('Lee','Michael','The greatest glory in living lies not in never falling, but in rising every time we fall. ', new Date)
+    new Quote('We are all like fireworks: We climb, we shine and always go our separate ways and become further apart','Fear is not evil','To know sorrow is not terrifying. ', new Date)
   ]
-
+  add(theQuote) {
+    this.quotes.push(theQuote)
+  }
+  Up(i) {
+    this.quotes[i].Up +=1;
+  }
+  Down(i) {
+    this.quotes[i].Down +=1;
+  }
+  Delete(i) {
+    this.quotes.splice(i, 1)
+  }
   constructor() { }
 
   ngOnInit(): void {

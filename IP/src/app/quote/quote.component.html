@@ -8,12 +8,16 @@
               <div *ngFor="let quote of quotes">
                 <app-details [quote]="quote"></app-details>
               </div>
-    <app-form></app-form>
+    <app-form (emitQuote)="add($event)"></app-form>
         </div>
           <div>
-        <button class="btn btn-info">Upvote </button>
-        <button class="btn btn-info">Downvote </button>
-        <button class="btn btn-danger">Delete</button>
+            <div *ngFor="let quote of quotes let i=index">
+                <app-details [quote]="quote"></app-details>
+                
+        <button class="btn btn-info" (click)="Up(i)">Upvote </button>
+        <button class="btn btn-info" (click)="Down(i)">Downvote </button>
+        <button class="btn btn-danger" (click)="Delete(i)">Delete</button>
+        </div>
           </div>
     </div>
     </body>
