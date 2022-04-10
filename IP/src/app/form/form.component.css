@@ -1,4 +1,13 @@
 .field{
     text-align: center;
     font-size: 18px;
+    margin-top: 15px;
+}
+
+#btn1{
+    margin-left: 635px;
+    border-radius: 10px;
+    background-color: orange;
+    cursor: pointer;
+
 }
