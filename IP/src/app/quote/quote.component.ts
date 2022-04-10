@@ -12,16 +12,14 @@ export class QuoteComponent implements OnInit {
   add(theQuote) {
     this.quotes.push(theQuote)
   }
-  add(theQuote) {
-    this.quotes.push(theQuote)
-  }
   Up(i) {
     this.quotes[i].Up +=1;
   }
   Down(i) {
     this.quotes[i].Down +=1;
   }
-
+  Delete(i) {
+    this.quotes.splice(i, 1)
   }
   constructor() { }
 
